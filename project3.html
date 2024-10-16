@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 | Alexander Piraino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Alexander Piraino</div>
+            <a href="index.html">Back</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Project 3: Monitoring and Logging</h2>
+        <img src="project3-banner.jpeg" alt="Monitoring and Logging Project" style="width:80%;">
+        <p>
+            Project Overview:
+            <img src="project3.jpeg" alt="Monitoring" style="width:80%;">
+            This project focuses on the creation and implementation of a comprehensive monitoring and logging system that provides real-time insights into the health and performance of applications and infrastructure. Using tools such as Prometheus, Grafana, and ELK Stack (Elasticsearch, Logstash, Kibana), this system enables automatic monitoring of key metrics, alerting, and log management.
+            
+            Key Technologies and Tools Used:
+            
+            Prometheus (Monitoring and Metrics Collection):
+            Prometheus was used to collect and store time-series data on various system metrics such as CPU usage, memory consumption, and network activity. Prometheus scrapes data at regular intervals and stores it in its time-series database.
+            
+            Grafana (Visualization and Dashboarding):
+            Grafana is used to visualize the data collected by Prometheus. It offers a dynamic and customizable dashboard where metrics are displayed in real-time using graphs, tables, and other visual components. Alerts are also set up in Grafana to notify administrators of anomalies or failures.
+            
+            ELK Stack (Logging and Log Management):
+            The ELK Stack consists of Elasticsearch, Logstash, and Kibana. It was employed to collect, filter, and analyze logs from applications and infrastructure. Elasticsearch stores log data in an efficient and searchable manner, while Logstash processes logs and sends them to Elasticsearch. Kibana is used to create visualizations and dashboards for logs.
+            
+            Project Process:
+            
+            Real-Time Metrics Collection:
+            Prometheus collects metrics from various application components, databases, and servers, including performance data such as response times, database queries, and more. This data is stored in time-series format.
+            
+            Dashboard Visualization:
+            Grafana is used to create interactive dashboards displaying metrics from Prometheus. These dashboards help identify performance bottlenecks, system health, and anomalies in real time.
+            
+            Log Collection and Management:
+            Using ELK Stack, logs from different applications, servers, and services are gathered, processed, and stored for analysis. Kibana visualizes these logs, making it easy to search and identify critical issues, such as error messages or unusual patterns.
+            
+            Alerts and Notifications:
+            Grafana is configured to send alerts when certain thresholds or anomalies are detected in the monitored metrics. These alerts can be sent via email, Slack, or other communication channels.
+            
+            Benefits of Monitoring and Logging:
+            
+            Proactive Monitoring: 
+            Continuous monitoring ensures that issues are detected before they impact users, enabling timely remediation.
+            
+            Improved Performance: 
+            Real-time metrics help identify areas of improvement, ensuring the system remains efficient and scalable.
+            
+            Easier Troubleshooting: 
+            Centralized log management with ELK Stack makes it easier to identify the root cause of problems and resolve them quickly.
+            
+            Enhanced Reliability: 
+            With proper monitoring and alerting, systems can automatically respond to failures, maintaining high availability.
+            </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alexander Piraino. All rights reserved.</p>
+    </footer>
+</body>
+</html>

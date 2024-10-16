@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 | Alexander Piraino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Alexander Piraino</div>
+            <a href="index.html">Back</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Project 2: Automated Deployment Pipeline</h2>
+        <img src="project2-banner.jpeg" alt="Automated Deployment Pipeline" style="width:50%;">
+        <p>
+            Project Overview:
+            <img src="project2.jpeg" alt="Automated Deployment Pipeline" style="width:50%;">
+            This project demonstrates the design, implementation, and deployment of a fully automated CI/CD (Continuous Integration/Continuous Delivery) pipeline that automates the software delivery process. The pipeline ensures that changes in the codebase are automatically tested, integrated, and deployed across multiple environments. The pipeline was built using various DevOps tools and practices, including Jenkins for automation, Docker for containerization, and Kubernetes for orchestration.
+            
+            Key Technologies and Tools Used:
+            
+            Jenkins (Automation Server):
+            
+            Jenkins was used to orchestrate the entire pipeline. It continuously monitors the version control system (GitHub) for new commits. Once a change is detected, it triggers the pipeline to start the build process.
+            Automated tests are executed as part of the pipeline, ensuring that code quality is maintained before deployment.
+            Docker (Containerization):
+            
+            Docker was utilized to containerize the application, ensuring that the application runs consistently across different environments, whether in development, staging, or production.
+            Containers enable faster deployment times, isolation between services, and easier rollback mechanisms if something goes wrong.
+            Kubernetes (Container Orchestration):
+            
+            Kubernetes was employed for orchestrating the Docker containers across various cloud environments.
+            It automates the deployment, scaling, and management of the containerized applications, ensuring high availability and fault tolerance.
+            Kubernetes also manages rolling updates and self-healing, so the application can recover from failures automatically.
+            Version Control (GitHub):
+            
+            The project uses GitHub as the version control system. Every time a developer pushes changes, Jenkins pulls the latest code from the repository, ensuring that the most recent version is always built and tested.
+            GitHub integrates with Jenkins through webhooks, triggering the pipeline whenever new commits are pushed.
+            Terraform (Infrastructure as Code):
+            
+            To ensure the infrastructure is versioned and reproducible, Terraform was used to define the cloud infrastructure, such as servers, networks, and load balancers, as code.
+            This makes it possible to quickly spin up or tear down environments with minimal manual intervention.
+            Testing Framework (JUnit / Selenium):
+            
+            Automated unit tests (JUnit) and end-to-end tests (Selenium) are executed as part of the pipeline. These tests ensure that code changes do not introduce any bugs or regressions and that the application functions as expected.
+            After tests are passed, the application is automatically deployed to the staging environment for further manual or automated validation.
+            Project Process:
+            
+            Code Commit & Build:
+            
+            A developer commits code to the GitHub repository. This triggers Jenkins, which checks out the code and initiates the build process.
+            Jenkins uses a Dockerfile to build the application inside a Docker container.
+            Automated Testing:
+            
+            After the build completes, automated unit and integration tests are run using JUnit and Selenium.
+            If the tests pass successfully, Jenkins moves to the next step; otherwise, the process halts, and the developers are notified of the errors.
+            Containerization & Deployment:
+            
+            Upon passing the tests, Jenkins pushes the Docker image to a Docker registry (e.g., Docker Hub or a private registry).
+            The new Docker image is then deployed to Kubernetes, where it is orchestrated across various nodes in the cluster. Kubernetes ensures the application is up and running, scaling it as needed based on traffic or resource requirements.
+            Monitoring & Logging:
+            
+            Tools like Prometheus and Grafana are integrated to monitor the health and performance of the application once it’s deployed. Logs are collected using Fluentd and stored in a centralized location like Elasticsearch for easy access and troubleshooting.
+            Continuous Delivery:
+            
+            The pipeline ensures that the application is always in a deployable state. As soon as a developer pushes code, it’s tested, built, and deployed automatically, ensuring continuous delivery.
+            Rollback Mechanism:
+            
+            Kubernetes supports rolling updates, meaning the system can gradually replace old versions of the application with new ones without downtime. If a failure occurs, Kubernetes can automatically roll back to the previous stable version.
+            Benefits of the CI/CD Pipeline:
+            
+            Faster Time to Market: Automated pipelines speed up the process of getting code from development to production, reducing manual intervention and accelerating delivery cycles.
+            Improved Code Quality: Continuous integration and automated testing ensure that bugs and vulnerabilities are caught early in the development process, improving the overall quality of the code.
+            Scalability and Flexibility: Kubernetes provides a highly scalable and fault-tolerant environment. The application can be scaled up or down based on demand, and new versions can be rolled out without downtime.
+            Reduced Human Error: Automation reduces human error by eliminating manual deployment steps and ensuring that each step of the pipeline is executed consistently.
+            </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alexander Piraino. All rights reserved.</p>
+    </footer>
+</body>
+</html>

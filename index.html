@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alexander Piraino - DevOps Engineer in training">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
+    <title>Alexander Piraino | DevOps Engineer in training</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                
+                <!-- Made-up Logo -->
+                <div class="made-up-logo">AP</div>
+                Alexander Piraino
+            </div>
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <!-- Profile Picture -->
+            <div class="profile-container">
+                <img src="Alex.jpg" alt="Alexander Piraino" class="profile-pic">
+                <div class="profile-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm <strong>Alexander Piraino</strong>, a dedicated DevOps Engineer currently pursuing a BAS in DevOps Engineering at Community Colleges of Spokane, set to graduate in 2026. I graduated with an AAS in Software Development in 2024, achieving a 3.74 GPA. My education has equipped me with a strong foundation in programming and problem-solving.</p>
+    
+                    <p>Throughout my 7.8 years of experience in security and analytics across the banking and IT sectors, I've honed my technical skills to excel in various roles. In banking, I effectively mitigated financial risks and protected customer accounts through meticulous fraud detection and analysis. Prior to this, I led a team in customer-focused operations, managing logistics and ensuring efficient service delivery.</p>
+    
+                    <p>I possess a unique blend of financial acumen, technical proficiency, leadership, and customer service skills, which enables me to tackle challenges with a holistic approach. I am committed to excellence in everything I do, and I look forward to leveraging my expertise to contribute to your team's success!</p>
+                </div>
+            </div>
+    
+            <!-- Education Section -->
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Community Colleges of Spokane</strong> (2022 – 2026)<br>
+                        Pursuing BAS in DevOps Engineering (Fall 2024)<br>
+                        Graduated with AAS in Software Development, 3.74 GPA
+                    </li>
+                    <li><strong>Priest River Lamana High School</strong> (2002-2005)<br>
+                        Completed AP courses in IT
+                    </li>
+                </ul>
+            </div>
+        </section>
+      
+        
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Proficient in Java, JavaScript, Kotlin, iOS, PHP, CSS3/HTML</li>
+                    <li><strong>Web Development:</strong> Skilled in HTML, CSS, JavaScript; familiar with PHP and Node.js; knowledgeable in responsive design and frameworks like jQuery, React, or Angular.</li>
+                    <li><strong>Mobile Development:</strong> Experience with Swift for iOS and Java/Kotlin for Android; capable of cross-platform development using React Native or Flutter.</li>
+                    <li><strong>Databases:</strong> Proficient in SQL (MySQL, PostgreSQL); familiar with NoSQL (MongoDB).</li>
+                    <li><strong>Version Control:</strong> Experienced in Git.</li>
+                    <li><strong>IDEs:</strong> Comfortable with Visual Studio Code, Eclipse, and Android Studio.</li>
+                    <li><strong>Operating Systems:</strong> Knowledgeable in Windows, Linux, and macOS.</li>
+                    <li><strong>Software Development Methodologies:</strong> Familiar with Agile, Scrum, and Waterfall.</li>
+                    <li><strong>SQL Management:</strong> Proficient in SQL queries, data retrieval, manipulation, and optimization.</li>
+                    <li><strong>Fraud Detection:</strong> Experienced in identifying and analyzing fraudulent activities.</li>
+                    <li><strong>Customer Service:</strong> Excellent skills in handling inquiries and disputes professionally.</li>
+                    <li><strong>Communication:</strong> Strong ability to relay information effectively.</li>
+                    <li><strong>Analytical Skills:</strong> Able to analyze data and trends for informed decisions.</li>
+                </ul>
+            </div>
+        
+        </section>        
+
+        <section id="projects">
+            <h2>Notable Projects</h2>
+            <ul>
+                <li><a href="project1.html">Project 1: Automated Deployment Pipeline</a></li>
+                <li><a href="project2.html">Project 2:  Infrastructure as Code</a></li>
+                <li><a href="project3.html">Project 3: Monitoring and Logging</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:axelpwork@hotmail.com">axelpwork@hotmail.com</a></p>
+            <p>Phone: 123-456-7890</p>
+            <div class="social-links">
+                <a href="https://github.com/Pirainocis233">GitHub</a>
+                <a href="https://www.linkedin.com/in/alexander-p-a89069a1">LinkedIn</a>
+                <a href="https://webdeveloper.Jensarsoft.com">Personal Website</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alexander Piraino. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        // Mobile Menu Toggle Script
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
