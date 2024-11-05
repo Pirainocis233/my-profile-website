@@ -3,64 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project 3: Monitoring and Logging by Alexander Piraino">
     <title>Project 3 | Alexander Piraino</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Alexander Piraino</div>
-            <a href="index.html">Back</a>
+            <div class="logo">
+                Alexander Piraino
+            </div>
+            <a href="index.html" class="back-button">Back</a>
         </nav>
     </header>
 
     <main>
-        <h2>Project 3: Monitoring and Logging</h2>
-        <img src="project3-banner.jpeg" alt="Monitoring and Logging Project" style="width:80%;">
-        <p>
-            Project Overview:
-            <img src="project3.jpeg" alt="Monitoring" style="width:80%;">
-            This project focuses on the creation and implementation of a comprehensive monitoring and logging system that provides real-time insights into the health and performance of applications and infrastructure. Using tools such as Prometheus, Grafana, and ELK Stack (Elasticsearch, Logstash, Kibana), this system enables automatic monitoring of key metrics, alerting, and log management.
-            
-            Key Technologies and Tools Used:
-            
-            Prometheus (Monitoring and Metrics Collection):
-            Prometheus was used to collect and store time-series data on various system metrics such as CPU usage, memory consumption, and network activity. Prometheus scrapes data at regular intervals and stores it in its time-series database.
-            
-            Grafana (Visualization and Dashboarding):
-            Grafana is used to visualize the data collected by Prometheus. It offers a dynamic and customizable dashboard where metrics are displayed in real-time using graphs, tables, and other visual components. Alerts are also set up in Grafana to notify administrators of anomalies or failures.
-            
-            ELK Stack (Logging and Log Management):
-            The ELK Stack consists of Elasticsearch, Logstash, and Kibana. It was employed to collect, filter, and analyze logs from applications and infrastructure. Elasticsearch stores log data in an efficient and searchable manner, while Logstash processes logs and sends them to Elasticsearch. Kibana is used to create visualizations and dashboards for logs.
-            
-            Project Process:
-            
-            Real-Time Metrics Collection:
-            Prometheus collects metrics from various application components, databases, and servers, including performance data such as response times, database queries, and more. This data is stored in time-series format.
-            
-            Dashboard Visualization:
-            Grafana is used to create interactive dashboards displaying metrics from Prometheus. These dashboards help identify performance bottlenecks, system health, and anomalies in real time.
-            
-            Log Collection and Management:
-            Using ELK Stack, logs from different applications, servers, and services are gathered, processed, and stored for analysis. Kibana visualizes these logs, making it easy to search and identify critical issues, such as error messages or unusual patterns.
-            
-            Alerts and Notifications:
-            Grafana is configured to send alerts when certain thresholds or anomalies are detected in the monitored metrics. These alerts can be sent via email, Slack, or other communication channels.
-            
-            Benefits of Monitoring and Logging:
-            
-            Proactive Monitoring: 
-            Continuous monitoring ensures that issues are detected before they impact users, enabling timely remediation.
-            
-            Improved Performance: 
-            Real-time metrics help identify areas of improvement, ensuring the system remains efficient and scalable.
-            
-            Easier Troubleshooting: 
-            Centralized log management with ELK Stack makes it easier to identify the root cause of problems and resolve them quickly.
-            
-            Enhanced Reliability: 
-            With proper monitoring and alerting, systems can automatically respond to failures, maintaining high availability.
+        <section class="project-section">
+            <img src="project3-banner.jpeg" alt="Monitoring and Logging Project" class="banner-image">
+            <h2>Project 3: Monitoring and Logging</h2>
+            <img src="project3.jpeg" alt="Monitoring" class="project-image">
+            <p>
+                This project focuses on the creation and implementation of a comprehensive monitoring and logging system that provides real-time insights into the health and performance of applications and infrastructure. Using tools such as Prometheus, Grafana, and ELK Stack (Elasticsearch, Logstash, Kibana), this system enables automatic monitoring of key metrics, alerting, and log management.
             </p>
+            <h3>Key Technologies and Tools Used:</h3>
+            <ul>
+                <li><strong>Prometheus (Monitoring and Metrics Collection):</strong> Prometheus was used to collect and store time-series data on various system metrics such as CPU usage, memory consumption, and network activity. Prometheus scrapes data at regular intervals and stores it in its time-series database.</li>
+                <li><strong>Grafana (Visualization and Dashboarding):</strong> Grafana is used to visualize the data collected by Prometheus. It offers a dynamic and customizable dashboard where metrics are displayed in real-time using graphs, tables, and other visual components. Alerts are also set up in Grafana to notify administrators of anomalies or failures.</li>
+                <li><strong>ELK Stack (Logging and Log Management):</strong> The ELK Stack consists of Elasticsearch, Logstash, and Kibana. It was employed to collect, filter, and analyze logs from applications and infrastructure. Elasticsearch stores log data in an efficient and searchable manner, while Logstash processes logs and sends them to Elasticsearch. Kibana is used to create visualizations and dashboards for logs.</li>
+            </ul>
+            <h3>Project Process:</h3>
+            <ul>
+                <li><strong>Real-Time Metrics Collection:</strong> Prometheus collects metrics from various application components, databases, and servers, including performance data such as response times, database queries, and more. This data is stored in time-series format.</li>
+                <li><strong>Dashboard Visualization:</strong> Grafana is used to create interactive dashboards displaying metrics from Prometheus. These dashboards help identify performance bottlenecks, system health, and anomalies in real time.</li>
+                <li><strong>Log Collection and Management:</strong> Using ELK Stack, logs from different applications, servers, and services are gathered, processed, and stored for analysis. Kibana visualizes these logs, making it easy to search and identify critical issues, such as error messages or unusual patterns.</li>
+                <li><strong>Alerts and Notifications:</strong> Grafana is configured to send alerts when certain thresholds or anomalies are detected in the monitored metrics. These alerts can be sent via email, Slack, or other communication channels.</li>
+            </ul>
+            <h3>Benefits of Monitoring and Logging:</h3>
+            <ul>
+                <li><strong>Proactive Monitoring:</strong> Continuous monitoring ensures that issues are detected before they impact users, enabling timely remediation.</li>
+                <li><strong>Improved Performance:</strong> Real-time metrics help identify areas of improvement, ensuring the system remains efficient and scalable.</li>
+                <li><strong>Easier Troubleshooting:</strong> Centralized log management with ELK Stack makes it easier to identify the root cause of problems and resolve them quickly.</li>
+                <li><strong>Enhanced Reliability:</strong> With proper monitoring and alerting, systems can automatically respond to failures, maintaining high availability.</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
